@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Salim</a>
+            </div>
+            <nav id="nav">
+                <ul>
+    
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>SALIM BELLO</h1>
+            <h2>Software Engineer - Expert Backend</h2>
+            <div class="redes">
+                <a href="https://web.facebook.com/saleem.ahmad.1234/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/SaaleemBello/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://linkedin.com/mwlite/in/salim-bello-328311214"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/cyberking353"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hello, I'm Salim Bello.</span> A computer science student from Gombe State University, a passionate back-end developer working on vast modern web technologies.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li>
+                            <strong>Phone Number</strong>
+                            +2349032232313
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            saleemyoungarmy3@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            https://salimbello.dev
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            Arawa B, Gombe, Gombe State.
+                        </li>
+                        <li>
+                            <strong>Occupation</strong>
+                            <span>FREELANCER</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interested In</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>GAMING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>READING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVELLING</span>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <a href="./salim_cv.pdf" download="my_cv">
+                Download CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Vanilla Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Django</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>61%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Project Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>Bsc. Computer Science</h4>
+                        <span class="casa">Gombe State University</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                     <div class="item izq">
+                        <h4>Pre-Degree Certification</h4>
+                        <span class="casa">School of Basic And Remedial Studies, GSU</span>
+                        <span class="fecha">2017 - 2018</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>SSCE (WAEC)</h4>
+                        <span class="casa">Victory Unity College</span>
+                        <span class="fecha">2011 - 2017</span>
+                        <p></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                 
+                </div>
+
+                <div class="col derecha">
+                    <h3>Work Experience</h3>
+                    <div class="item der">
+                        <h4>Full-Stack Developer</h4>
+                        <span class="casa">Freelancer</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>I developed a fully functional web application aimed to ease student's electoral processes in Gombe State University.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>UI/UX Designer</h4>
+                        <span class="casa">Freelancer</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>I worked on the design of yet to developed app called Debug4cash app that pays user for debugging a coding problem.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Back-end Developer</h4>
+                        <span class="casa">Cainoa Softwares</span>
+                        <span class="fecha">2022</span>
+                        <p>Worked as a back-end developer in developing a fully functional school management system software for Al-burhan schools.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p4.png" alt="">
+                    <div class="overlay">
+                        <h3>Vote4change</h3>
+                        <p>GSU electoral app</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Debug4Cash App</h3>
+                        <p>UI/UX Designs</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.png" alt="">
+                    <div class="overlay">
+                        <h3>School Management System</h3>
+                        <p>Alburhan Schools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                	<form action="https://formsubmit.co/saleemyoungarmy3@gmail.com" method="POST">
+                    <input type="text" placeholder="Full Name" name="name" required>
+                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="text" placeholder="Phone Number" name="phone" required>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Message <i class="fa-solid fa-paper-plane" type="submit"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.3652460394937!2d11.172051374098832!3d10.312626167579198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10ffd1242127d381%3A0xd485cae67750f5e!2sArawa%20Market!5e0!3m2!1sen!2sng!4v1684319052594!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            	<a href="https://web.facebook.com/saleem.ahmad.1234/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/SaaleemBello/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://web.facebook.com/saleem.ahmad.1234/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/cyberking353"><i class="fa-brands fa-github"></i></a>
+                <p>All rights reserve &copy; 2023</p>
+       </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
